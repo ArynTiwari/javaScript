@@ -1,0 +1,40 @@
+:root {
+  box-sizing: border-box;
+}
+body {
+  font-size: 22px;
+}
+.head {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.box{
+  background-color: aqua;
+}
+.box button {
+  width: 150px;
+  height: 50px;
+}
+.result{
+    resize: none;
+    padding: 4px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.display{
+    padding: 10px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    
+}

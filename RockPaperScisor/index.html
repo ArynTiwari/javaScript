@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="head">The Game</div>
+    <div class="main">
+      <div class="box"><button class="btn" onclick="playGame('rock')">Rock</button></div>
+      <div class="box"><button onclick="playGame('paper')">Paper</button></div>
+      <div class="box">
+        <button onclick="playGame('scissors')">Scisors</button>
+      </div>
+    </div>
+    <div class="head">
+      <textarea id="result" class="result" readonly>Result</textarea>
+    </div>
+    <div class="display">
+      <label>Wins:</label>
+      <span id="win">0</span>
+
+      <label>Looses:</label>
+      <span id="loose">0</span>
+
+      <label>Ties:</label>
+      <span id="ties">0</span>
+    </div>
+    <div class="test">Hey this is the test Tag</div>
+    <script src="index.js">
+    </script>
+  </body>
+</html>
