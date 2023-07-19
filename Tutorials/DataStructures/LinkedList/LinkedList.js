@@ -16,6 +16,7 @@ class LinkedList {
   getSize() {
     return this.size;
   }
+  //add at last
   append(value) {
     let node = new Node(value);
     if (this.isEmpty()) {
@@ -29,6 +30,7 @@ class LinkedList {
     }
     this.size++;
   }
+  //add in front
   add(value) {
     const newNode = new Node(value);
     if (this.isEmpty()) {
@@ -38,6 +40,17 @@ class LinkedList {
       this.head = newNode;
     }
     this.size++;
+  }
+  //delete
+  deleteAtEnd() {
+    if (this.isEmpty()) {
+      console.log("LL is Empty");
+    }
+    let curr = this.head;
+    while (curr.next != null) {
+      curr = curr.next;
+    }
+    
   }
   print() {
     if (this.isEmpty()) {
@@ -62,5 +75,5 @@ console.log(ll.isEmpty());
 ll.append(10);
 ll.append(20);
 ll.append(30);
+ll.delete(30);
 ll.print();
-console.log(ll.getSize())
